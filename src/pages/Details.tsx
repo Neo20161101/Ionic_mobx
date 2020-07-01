@@ -1,7 +1,8 @@
 import React from 'react';
 import { IonBackButton, IonButtons, IonHeader, IonPage, IonToolbar, IonTitle, IonContent } from '@ionic/react';
-
-const Details: React.FC = () => {
+import { observer, inject } from 'mobx-react';
+const Details: React.FC = (props) => {
+  console.log(props)
   return (
     <IonPage>
       <IonHeader>
@@ -19,4 +20,4 @@ const Details: React.FC = () => {
   );
 };
 
-export default Details;
+export default inject('config')(Details);

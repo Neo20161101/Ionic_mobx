@@ -9,7 +9,7 @@ import {
   IonTabButton,
   IonTabs
 } from '@ionic/react';
-import { observer,inject,Provider } from 'mobx-react';
+import { observer, inject } from 'mobx-react';
 import { IonReactRouter } from '@ionic/react-router';
 import { square, triangle, images } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
@@ -38,50 +38,38 @@ import './theme/variables.css';
 
 /* Global CSS */
 import './global.css';
-
 // interface Props {
-// 	config:any; // 必要属性
+//   config: any // 必要属性
 // }
 // interface IProps {
 //   myStore?: MyStore;
 //   id: string;
 // }
-// @inject('config')
-// @observer 
-export const Store = React.createContext('');
-const store = React.useContext(Store);
-const App: React.FC = (props) => (
+const App: React.FC = observer<{ props: any }>((props) => (
 
-    <IonApp>
-      <IonReactRouter>
-        <IonTabs>
-          <IonRouterOutlet>
-            <Route path="/tab1" component={Tab1} exact={true} />
-            <Route path="/tab2" component={Tab2} exact={true} />
-            <Route path="/tab2/details" component={Details} exact={true} />
-            <Route path="/tab3" component={Tab3} exact={true} />
-            <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
-          </IonRouterOutlet>
-          <IonTabBar slot="bottom">
-            {
-              console.log(store)
-            }
-            <IonTabButton tab="tab1" href="/tab1">
-              <IonIcon icon={triangle} />
-              <IonLabel>Tab One</IonLabel>
-            </IonTabButton>
-            {/* <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon icon={images} />
-            <IonLabel>Photos</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon icon={square} />
-            <IonLabel>Tab Three</IonLabel>
-          </IonTabButton> */}
-          </IonTabBar>
-        </IonTabs>
-      </IonReactRouter>
-    </IonApp>
-);
+  <IonApp>
+    <IonReactRouter>
+      <IonTabs>
+        <IonRouterOutlet>
+          <Route path="/tab1" component={Tab1} exact={true} />
+          <Route path="/tab2" component={Tab2} exact={true} />
+          <Route path="/tab2/details" component={Details} exact={true} />
+          <Route path="/tab3" component={Tab3} exact={true} />
+          <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
+        </IonRouterOutlet>
+        <IonTabBar slot="bottom">
+          {
+            props.config.tabBar.list.map(item =>
+              <IonTabButton key={item.pagePath} tab={item.pagePath} href={item.pagePath}>
+                <IonIcon icon={item.iconPath} />
+                <IonLabel>{item.Label}</IonLabel>
+              </IonTabButton>
+            )
+          }
+        </IonTabBar>
+      </IonTabs>
+    </IonReactRouter>
+  </IonApp>
+));
 
-export default App;
+export default inject('config')(App);

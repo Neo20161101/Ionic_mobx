@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
-import { 
-  IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFab, IonFabButton, 
-  IonIcon, IonGrid, IonRow, IonCol, IonImg, IonActionSheet,IonButton,
+import {
+  IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFab, IonFabButton,
+  IonIcon, IonGrid, IonRow, IonCol, IonImg, IonActionSheet, IonButton,
   useIonViewDidEnter,
   useIonViewDidLeave,
   useIonViewWillEnter,
   useIonViewWillLeave
- } from '@ionic/react';
+} from '@ionic/react';
+import { observer, inject } from 'mobx-react';
 import { camera, trash, close } from 'ionicons/icons';
 import { usePhotoGallery, Photo } from '../hooks/usePhotoGallery';
 
 
 
 
-const Tab2: React.FC = (props: any) => {
+const Tab2: React.FC = observer((props: any) => {
   const { deletePhoto, photos, takePhoto } = usePhotoGallery();
   const [photoToDelete, setPhotoToDelete] = useState<Photo>();
   const hich = () => {
-    console.log(props)
     props.history.push({
       pathname: '/tab2/details'
     })
@@ -45,7 +45,7 @@ const Tab2: React.FC = (props: any) => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-      <IonHeader collapse="condense">
+        <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Photo Gallery</IonTitle>
           </IonToolbar>
@@ -91,6 +91,6 @@ const Tab2: React.FC = (props: any) => {
       </IonContent>
     </IonPage>
   );
-};
+});
 
-export default Tab2;
+export default inject('config')(Tab2);

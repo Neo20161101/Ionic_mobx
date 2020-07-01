@@ -6,6 +6,7 @@ import Config from './config/index'
 import * as serviceWorker from './serviceWorker';
 import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
+
 defineCustomElements(window);
 ReactDOM.render(<Provider config={Config}><App /></Provider>, document.getElementById('root'));
 
