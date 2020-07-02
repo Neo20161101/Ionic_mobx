@@ -1,0 +1,15 @@
+.notfound_404{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+ .notfound_404 .AtDivider{
+   background-color:#f8f8f8;
+}
+.notfound_404 image{
+  width:371px;  
+}
+

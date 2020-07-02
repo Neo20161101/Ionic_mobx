@@ -4,8 +4,8 @@ import ExploreContainer from '../components/ExploreContainer';
 import { observer, inject } from 'mobx-react';
 import './Tab3.css';
 
-const Tab3: React.FC = (props) => {
-  const hich = (e) => {
+const Tab3: React.FC = (props:any) => {
+  const hich = (e:any) => {
     e.preventDefault()
     props.history.push({
       pathname: '/tab2'
@@ -24,7 +24,7 @@ const Tab3: React.FC = (props) => {
             <IonTitle size="large">Tab 3</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonButton onClick={hich}>dsfgdsg</IonButton>
+        <IonButton onClick={hich}>跳转tab2</IonButton>
         <ExploreContainer name="Tab 3 page" />
       </IonContent>
     </IonPage>

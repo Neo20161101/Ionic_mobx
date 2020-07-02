@@ -23,13 +23,30 @@ After the user navigates to Tab 2 (Photos), they can tap/click on the camera but
 * Tab2 (Photos) (`src/pages/Tab2.tsx`): Photo Gallery UI and basic logic.
 * usePhotoGallery Hook (`src/hooks/usePhotoGallery.ts`): Logic encapsulating Capacitor APIs, including Camera, Filesystem, and Storage.
 
-## How to Run
+## How to Run; http://172.29.64.1:8100
 
 > Note: It's highly recommended to follow along with the [tutorial guide](https://ionicframework.com/docs/react/your-first-app), which goes into more depth, but this is the fastest way to run the app. 
 
 0) Install Ionic if needed: `npm install -g @ionic/cli`.
 1) Clone this repository.
 2) In a terminal, change directory into the repo: `cd photo-gallery-capacitor-react`.
-3) Install all packages: `npm install`.
+3) Install all packages: `npm install || yarn`.
 4) Run on the web: `ionic serve`.
-5) Run on iOS or Android: See [here](https://ionicframework.com/docs/building/running).
+5) Run on the build: `ionic build`.
+6) Run on iOS or Android: `ionic cap add android || iOS` See [here](https://ionicframework.com/docs/building/running)
+7) Run on the copy: `ionic cap copy`
+8) Run on the sync: `ionic cap sync`
+9) Run on the open: `ionic cap open android`
+
+## 每次执行ionic build更新Web目录的构建（例如）（默认值：）时build，您需要将这些更改复制到本地项目中：`ionic cap copy`
+## 注意：对代码的本机部分进行更新（例如添加新插件）后，请使用以下sync命令：`ionic cap sync`
+## 实时重载
+## 要启动实时重载服务器，请运行以下命令。
+`ionic cap run android -l --external`
+## 或者手动在capactitor.config.json 添加以下代码例如(url自行更换)
+`  "server": {
+    "url": "http://172.29.64.1:8100",
+    "cleartext": true
+  }`
+
+`keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000`

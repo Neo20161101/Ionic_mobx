@@ -28,7 +28,7 @@ interface Index {
   props: PageStateProps;
 }
 
-@inject('http', 'stateStore')
+@inject('config')
 @observer
 class Index extends Component {
   constructor(props) {
@@ -180,17 +180,17 @@ class Index extends Component {
                 </View >
                 <View className="top4">
                   <View className="top4_le">
-                    <Text>{HomeInfoList.home_guideList[0].title} ></Text>
+                    <Text>{HomeInfoList.home_guideList[0].title} </Text>
                     <Image src={Star}></Image>
                     {/* <Image src={HomeInfoList.home_guideList[0].icon}></Image> */}
                   </View>
                   <View className="top4_ce">
-                    <Text>{HomeInfoList.home_guideList[1].title} ></Text>
+                    <Text>{HomeInfoList.home_guideList[1].title} </Text>
                     <Image src={Rule}></Image>
                     {/* <Image src={HomeInfoList.home_guideList[1].icon}></Image> */}
                   </View>
                   <View className="top4_ri">
-                    <Text>{HomeInfoList.home_guideList[2].title} ></Text>
+                    <Text>{HomeInfoList.home_guideList[2].title} </Text>
                     <Image src={Guidance_book}></Image>
                     {/* <Image src={HomeInfoList.home_guideList[3].icon}></Image> */}
                   </View>

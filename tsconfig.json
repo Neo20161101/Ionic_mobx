@@ -21,5 +21,9 @@
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    // 排除src目录下的文件夹下的文件不会编译
+    "src/pages/tabBar",
   ]
 }

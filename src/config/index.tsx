@@ -1,7 +1,7 @@
 import { observable } from 'mobx'
 import { observer, useLocalStore } from 'mobx-react'
 import { square, triangle, images, americanFootball } from 'ionicons/icons';
-import HomeImg from '../static/img/tabBar/home.png'
+import HomeImg from '../assets/static/img/tabBar/home.png'
 const store = observable({
   pages: [
     "pages/index/index",
@@ -51,5 +51,4 @@ const store = observable({
     ]
   }
 })
-//   const asd = 
 export default store

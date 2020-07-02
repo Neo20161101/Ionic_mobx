@@ -15,6 +15,7 @@ import { square, triangle, images } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
+import Tab4 from './components/Notfound/_404';
 import Details from './pages/Details';
 
 /* Core CSS required for Ionic components to work properly */
@@ -45,7 +46,7 @@ import './global.css';
 //   myStore?: MyStore;
 //   id: string;
 // }
-const App: React.FC = observer<{ props: any }>((props) => (
+const App: React.FC = observer((props: any) => (
 
   <IonApp>
     <IonReactRouter>
@@ -56,10 +57,11 @@ const App: React.FC = observer<{ props: any }>((props) => (
           <Route path="/tab2/details" component={Details} exact={true} />
           <Route path="/tab3" component={Tab3} exact={true} />
           <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
+          <Route component={Tab4} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           {
-            props.config.tabBar.list.map(item =>
+            props.config.tabBar.list.map((item: any) =>
               <IonTabButton key={item.pagePath} tab={item.pagePath} href={item.pagePath}>
                 <IonIcon icon={item.iconPath} />
                 <IonLabel>{item.Label}</IonLabel>

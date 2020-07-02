@@ -13,7 +13,6 @@ import { usePhotoGallery, Photo } from '../hooks/usePhotoGallery';
 
 
 
-
 const Tab2: React.FC = observer((props: any) => {
   const { deletePhoto, photos, takePhoto } = usePhotoGallery();
   const [photoToDelete, setPhotoToDelete] = useState<Photo>();
@@ -86,8 +85,6 @@ const Tab2: React.FC = observer((props: any) => {
           }]}
           onDidDismiss={() => setPhotoToDelete(undefined)}
         />
-
-
       </IonContent>
     </IonPage>
   );

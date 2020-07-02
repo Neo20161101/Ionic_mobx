@@ -34,7 +34,7 @@ interface Index {
 @observer
 class Index extends Component {
 
-  constructor(props) {
+  constructor(props: Readonly<{}> | undefined) {
     super(props)
     this.state = {
       array: [{
@@ -97,7 +97,7 @@ class Index extends Component {
 
   componentDidHide() { }
 
-  onGetUserInfoClick = (e) => {
+  onGetUserInfoClick = (e: { detail: { errMsg: string; userInfo: Object } }) => {
     const { stateStore } = this.props
     if(e.detail.errMsg=="getUserInfo:ok"){
       this.setState({toggleLogin:false})
@@ -110,7 +110,7 @@ class Index extends Component {
     }
   }
 
-  onOrdersClick = (id) => {
+  onOrdersClick = (id: string) => {
     const { stateStore } = this.props
     if (!stateStore.isLogin){
       Taro.atMessage({
@@ -138,7 +138,7 @@ class Index extends Component {
   }
 
 
-  onOtherClick = (value) => {
+  onOtherClick = (value: any) => {
     const { stateStore } = this.props
     if (!stateStore.isLogin){
       Taro.atMessage({
@@ -208,12 +208,12 @@ class Index extends Component {
           <View className="cen1">
             <View className="cen1_top">
               <Text className="cen1_txt1">我的订单</Text>
-              <Text className="cen1_txt2" onClick={(e) => this.onOrdersClick(0)}>查看全部订单 ></Text>
+              <Text className="cen1_txt2" onClick={(e: any) => this.onOrdersClick(0)}>查看全部订单 &gt;</Text>
               <View></View>
             </View>
             <View className="cen1_con">
               {
-                array.map(item => <View key={item.id} onClick={() => this.onOrdersClick(item.id)}>
+                array.map((item: { id: string | number | undefined; img: any; Text: any }) => <View key={item.id} onClick={() => this.onOrdersClick(item.id)}>
                   <Image src={item.img} style="width:44rpx"></Image>
                   <View className="cen1_con_text">{item.Text}</View>
                   <Text>1</Text>
