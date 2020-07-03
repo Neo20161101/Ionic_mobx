@@ -1,8 +1,12 @@
 import React from 'react';
 import { IonBackButton, IonButtons, IonHeader, IonPage, IonToolbar, IonTitle, IonContent } from '@ionic/react';
 import { observer, inject } from 'mobx-react';
-const Details: React.FC = (props) => {
+const Details: React.FC = (props:any) => {
   console.log(props)
+    const { fetchTest } = props.http
+    const getFetch = () => {
+        fetchTest({a:1})
+    }
   return (
     <IonPage>
       <IonHeader>
@@ -14,10 +18,10 @@ const Details: React.FC = (props) => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <p>Details</p>
+        <p onClick={getFetch}>Details</p>
       </IonContent>
     </IonPage>
   );
 };
 
-export default inject('config')(Details);
+export default inject('http')(Details);

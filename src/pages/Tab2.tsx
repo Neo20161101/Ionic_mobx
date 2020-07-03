@@ -40,13 +40,13 @@ const Tab2: React.FC = observer((props: any) => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Photo Gallery</IonTitle>
+          <IonTitle>Photo Gallery1</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Photo Gallery</IonTitle>
+            <IonTitle size="large">Photo Gallery2</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonButton onClick={hich}>二级页面</IonButton>
