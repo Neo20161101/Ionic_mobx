@@ -1,12 +1,14 @@
 body {
   position: relative;
 }
-
+ion-slides {
+  height: 100%;
+}
 
 
   .nav {
     width: 100%;
-    height: 107px;
+    height: 54px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,64 +18,64 @@ body {
 
   .nav_le {
     width: 46px;
-    height: 60px;
+    height: 30px;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 5px;
   }
 
   .nav_le .text1 {
     display: block;
     width: 46px;
-    height: 15px;
+    height: 8px;
     font-family: PingFang-SC-Bold;
-    font-size: 15px;
+    font-size: 8px;
   }
 
 
   .AtTabs .at-tabs__item-underline {
-    width: 56px;
+    width: 28px;
     left: 50%;
-    margin-left: -28px;
-    height: 4px;
+    margin-left: -14px;
+    height: 2px;
   }
 
   .yq {
-    width: 39px;
-    height: 34px;
+    width: 20px;
+    height: 17px;
   }
 
 
   .nav_ri {
-    width: 646px;
-    height: 60px;
+    width: 323px;
+    height: 30px;
     background: #f8f8f8;
-    border-radius: 30px;
+    border-radius: 15px;
     position: relative;
   }
 
   .nav_ri_ss {
     position: absolute;
-    width: 27px;
-    height: 27px;
-    left: 19px;
-    top: 16px;
+    width: 14px;
+    height: 14px;
+    left: 9px;
+    top: 8px;
   }
 
   .input {
     position: absolute;
-    width: 300px;
-    height: 23px;
-    font-size: 24px;
+    width: 150px;
+    height: 24px;
+    font-size: 12px;
     font-family: PingFang SC;
     font-weight: 400;
     color: #B1B1B6;
-    left: 54px;
-    top: 10px
+    left: 27px;
+    top: 5px
   }
 
   .con1 {
-    width: 750px;
-    height: 62px;
+    width: 375px;
+    height: 31px;
     background: #FFFFFFFF;
     display: flex;
     justify-content: center;
@@ -83,16 +85,16 @@ body {
 
   .txt1,
   .txt2 {
-    width: 106px;
-    height: 25px;
-    font-size: 24px;
+    width: 53px;
+    height: 13px;
+    font-size: 12px;
     font-family: PingFang SC;
     font-weight: 400;
     color: rgba(51, 51, 51, 1);
   }
 
   .txt1 {
-    margin-right: 136px;
+    margin-right: 68px;
   }
 
   .txt1.on,
@@ -102,38 +104,34 @@ body {
   }
 
   .con1_d {
-    width: 51px;
-    height: 4px;
+    width: 25px;
+    height: 2px;
     background: rgba(215, 185, 117, 1);
-    border-radius: 2px;
+    border-radius: 1px;
     position: absolute;
-    left: 229px;
-    top: 59px;
+    left: 115px;
+    top: 30px;
     transition: all .5s;
   }
 
   .con1_d.on {
-    left: 464px;
+    left: 232px;
   }
 
   .cen {
-    padding: 0 30px;
+    padding: 0 15px;
 
 
 
   }
   .cen .top1 {
-    margin: 0 auto;
-    width: 100%;
-    height: 252px;
-    border-radius: 16px;
+    border-radius: 8px;
     margin-top: 16px;
-    overflow: hidden;
 
 
 
   }
-  .cen .top1 image {
+  .cen .top1 img {
     width: 100%;
     height: 100%;
   }
@@ -222,28 +220,28 @@ body {
   .top3 {
     height: 82px;
     background: rgba(255, 255, 255, 1);
-    border-radius: 7px;
+    border-radius: 3px;
     margin: 0 auto;
   }
   .top3 .image3 {
-    width: 65px;
-    height: 65px;
-    margin-left: 18px;
-    margin-top: 8px;
+    width: 32px;
+    height: 32px;
+    margin-left: 9px;
+    margin-top: 4px;
     float: left;
   }
 
   .top3 .top3_cen {
-    margin-left: 18px;
-    margin-top: 15px;
+    margin-left: 9px;
+    margin-top: 7px;
     float: left;
   }
 
   .top3 .text3 {
     display: block;
-    width: 130px;
-    height: 23px;
-    font-size: 24px;
+    width: 65px;
+    height: 12px;
+    font-size: 12px;
     font-family: PingFang SC;
     font-weight: bold;
     color: rgba(51, 51, 51, 1);
@@ -251,33 +249,33 @@ body {
 
   .top3 .text4 {
     display: block;
-    width: 440px;
-    height: 20px;
-    font-size: 20px;
+    width: 220px;
+    height: 10px;
+    font-size: 10px;
     font-family: PingFang SC;
     font-weight: 400;
     color: rgba(102, 102, 102, 1);
-    margin-top: 8px;
+    margin-top: 4px;
   }
 
   .top3 .image4 {
     float: right;
-    width: 64px;
-    height: 29px;
+    width: 32px;
+    height: 15px;
     border: 1px solid #66DC79;
-    font-size: 18px;
+    font-size: 9px;
     font-weight: 700;
     color: #66DC79;
     text-align: center;
-    margin-top: 24px;
-    margin-right: 11px;
-    line-height: 1.6;
-    padding: 2px 0px;
-    border-radius: 8px;
+    margin-top: 12px;
+    margin-right: 5px;
+    line-height: .8;
+    padding: 1px 0px;
+    border-radius: 4px;
 
   }
   .top4 {
-    height: 60px;
+    height: 180px;
     background: rgb(248, 248, 248);
     overflow: hidden;
     margin-top: 18px;
@@ -286,328 +284,315 @@ body {
   .top4_le,
   .top4_ce,
   .top4_ri {
-    width: 219px;
+    width: 48%;
     height: 60px;
     background: rgba(255, 255, 255, 1);
-    border-radius: 9px;
+    border-radius: 4px;
     float: left;
     position: relative;
   }
 
-  .top4_le text {
-    width: 160px;
-    height: 23px;
-    font-size: 24px;
+  .top4_le span {
+    width: 80px;
+    height: 12px;
+    font-size: 12px;
     font-family: PingFang SC;
     font-weight: 400;
     color: rgba(51, 51, 51, 1);
     position: absolute;
-    left: 14px;
-    top: 19px;
+    left:7px;
+    top: 9px;
   }
 
   .top4_ri,
   .top4_ce {
-    margin-left: 19px;
+    margin-left: 9px;
   }
 
-  .top4_le Image {
-    width: 49px;
-    height: 36px;
+  .top4_le img {
+    width: 25px;
+    height: 18px;
     position: absolute;
-    top: 13px;
-    left: 164px;
+    top: 6px;
+    left: 82px;
   }
 
-  .top4_ce text {
-    width: 170px;
-    height: 23px;
-    font-size: 24px;
+  .top4_ce span {
+    width: 85px;
+    height: 24px;
+    font-size:12px;
     font-family: PingFang SC;
     font-weight: 400;
     color: rgba(51, 51, 51, 1);
     position: absolute;
-    left: 14px;
-    top: 19px;
+    left: 7px;
+    top: 9px;
   }
 
-  .top4_ce Image {
-    width: 39px;
-    height: 30px;
+  .top4_ce img {
+    width: 20px;
+    height: 15px;
     position: absolute;
-    top: 24px;
-    left: 175px;
+    top: 12px;
+    left: 87px;
   }
 
-  .top4_ri text {
-    width: 170px;
-    height: 23px;
-    font-size: 24px;
+  .top4_ri span {
+    width: 85px;
+    height: 24px;
+    font-size: 12px;
     font-family: PingFang SC;
     font-weight: 400;
     color: rgba(51, 51, 51, 1);
     position: absolute;
-    left: 14px;
-    top: 19px;
+    left: 7px;
+    top: 9px;
   }
 
-  .top4_ri image {
-    width: 26px;
-    height: 30px;
+  .top4_ri img {
+    width: 13px;
+    height: 15px;
     position: absolute;
-    top: 20px;
-    left: 184px;
+    top: 10px;
+    left: 92px;
   }
 
   .top5 .content {
-    width: 335px;
-    height: 444px;
-    margin-bottom: 20px;
+    width: 167px;
+    height: 222px;
+    margin-bottom: 10px;
   }
 
 
   .content_t {
-    width: 335px;
-    height: 335px;
+    width: 167px;
+    height: 167px;
     position: relative;
     overflow: hidden;
   }
 
-  .img1 {
+  .image1 {
     width: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    border-radius: 16px;
+    border-radius: 8px;
   }
 
   .content_tt {
-    width: 335px;
-    height: 60px;
+    width: 167px;
+    height: 30px;
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
     bottom: 0;
     left: 0;
   }
-  .content_tt image {
-    width: 57px;
-    height: 24px;
+  .content_tt img {
+    width: 28px;
+    height: 12px;
     position: absolute;
-    left: 18px;
-    top: 22px;
+    left: 9px;
+    top: 11px;
   }
 
-  .content_tt text {
-    width: 228px;
-    height: 17px;
-    font-size: 18px;
+  .content_tt span {
+    width: 114px;
+    height: 8px;
+    font-size: 9px;
     font-family: PingFang SC;
     color: rgba(255, 255, 255, 1);
     position: absolute;
-    left: 84px;
-    top: 22px;
+    left: 42px;
+    top: 11px;
   }
 
   .content_b {
-    width: 333px;
-    height: 109px;
+    width: 166px;
+    height: 54px;
     background: #FFFFFF;
     position: relative;
     border: 1px solid #fff;
-    border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
   .content_b .img {
-    width: 54px;
-    height: 54px;
+    width: 27px;
+    height: 27px;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    left: 27px;
-    bottom: 27px;
+    left: 13px;
+    bottom: 13px;
   }
 
-  .content_b .img2 {
-    width: 54px;
-    height: 54px;
+  .content_b .image2 {
+    width: 27px;
+    height: 27px;
   }
 
-  .content_b text {
+  .content_b span {
     /*width:106 px;*/
-    height: 23px;
-    font-size: 24px;
+    height: 11px;
+    font-size: 12px;
     font-family: PingFang SC;
     font-weight: bold;
     color: rgba(51, 51, 51, 1);
     position: absolute;
-    left: 100px;
-    bottom: 60px;
-  }
-  .img3 {
-    width: 63px;
-    height: 24px;
-    position: absolute;
-    left: 100px;
-    bottom: 27px;
+    left: 50px;
+    bottom: 30px;
   }
 
   .yqy {
-    width: 750px;
+    width: 375px;
     background: rgba(248, 248, 248, 1);
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   .n1 {
-    width: 750px;
-    height: 200px;
+    width: 375px;
+    height: 100px;
     position: relative;
     background: #FFFFFF;
-    margin-top: 9px;
+    margin-top: 4px;
   }
   .n1 .wz1 {
-    width: 110px;
-    height: 26px;
-    font-size: 27px;
+    font-size: 14px;
     font-family: PingFang SC;
     font-weight: 400;
     color: rgba(51, 51, 51, 1);
     position: absolute;
-    top: 22px;
-    left: 28px;
-    line-height: 26px;
+    top: 11px;
+    left: 14px;
+    line-height: 13px;
   }
 
   .n1 .con {
-    width: 696px;
-    height: 138px;
+    width: 348px;
+    height: 69px;
     border-top: 1px solid rgba(248, 248, 248, 1);
     position: absolute;
-    top: 62px;
-    left: 27px;
+    top: 31px;
+    left: 13px;
   }
 .n1 .con .fillInWechat {
   position: absolute;
-  left: 109px;
-  top: 76px;
+  left: 54px;
+  top: 38px;
 }
-.n1 .con .fillInWechat .at-input {
+.n1 .con .fillInWechat input {
   margin-left: 0;
   padding: 0;
-}
-.n1 .con .at-input input {
-  font-size: 22px;
+  font-size: 11px;
 }
   .tx1 {
-    width: 90px;
-    height: 90px;
+    width: 45px;
+    height: 45px;
     position: absolute;
     left: 0;
-    top: 30px;
+    top: 15px;
   }
 
   .pp {
     background: #F09D3E;
-    width: 63px;
-    height: 24px;
-    border: 2px solid rgba(248, 214, 139, 1);
-    border-radius: 5px;
+    width: 31px;
+    height: 12px;
+    border: 1px solid rgba(248, 214, 139, 1);
+    border-radius: 2px;
     position: absolute;
-    left: 12px;
-    top: 102px;
+    left: 6px;
+    top: 51px;
   }
-  .pp text {
-    width: 48px;
-    height: 16px;
-    font-size: 16px;
+  .pp span {
+    width: 24px;
+    height: 8px;
+    font-size: 8px;
     font-family: PingFang SC;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
-    line-height: 16px;
+    line-height: 8px;
     position: absolute;
-    left: 8.5px;
-    top: 4.5px;
+    left: 4px;
+    top: 2px;
   }
   .tst1 {
-    /*width: 104 px;*/
-    height: 23px;
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 800;
     color: rgba(51, 51, 51, 1);
     position: absolute;
-    left: 110px;
-    top: 40px;
+    left: 55px;
+    top: 20px;
   }
 
   .tb {
     position: absolute;
-    left: 212px;
-    height: 40px;
+    left: 106px;
+    height: 20px;
     overflow: hidden;
-    top: 37px;
+    top: 19px;
   }
 
   .hui {
-    width: 35px;
-    height: 27px;
-    margin-left: 10px;
+    width: 17px;
+    height: 14px;
+    margin-left: 5px;
   }
 
   .qi {
-    width: 25px;
-    height: 29px;
-    margin-left: 10px;
+    width: 12px;
+    height: 15px;
+    margin-left: 5px;
   }
 
   .tst2 {
     width: 180px;
     height: 22px;
-    font-size: 20px;
+    font-size: 10px;
     font-family: PingFang SC;
     font-weight: 400;
     color: rgba(177, 177, 182, 1);
     position: absolute;
-    left: 109px;
-    top: 90px;
+    left: 54px;
+    top: 45px;
   }
 
   .fz {
     position: absolute;
-    right: 50px;
-    top: 64px;
+    right: 25px;
+    top: 32px;
     border: 1px solid #D7B875;
-    padding: 5px 30px;
-    font-size: 26px;
-    border-radius: 25px;
+    padding: 2px 15px;
+    font-size: 13px;
+    border-radius: 12px;
     color: #D7B875;
   }
 
   .tx {
-    width: 22px;
-    height: 22px;
+    width: 11px;
+    height: 11px;
     position: absolute;
-    left: 360px;
-    top: 89px;
+    left: 180px;
+    top: 45px;
   }
 
   .wz2 {
-    width: 290px;
-    height: 20px;
-    font-size: 20px;
+    width: 145px;
+    height: 10px;
+    font-size: 10px;
     font-family: PingFang SC;
     font-weight: 400;
     color: rgba(177, 177, 182, 1);
     position: absolute;
-    left: 155px;
-    top: 24px;
+    left: 77px;
+    top: 12px;
   }
 
   .zw {
     position: absolute;
-    left: 245px;
-    top: 64px;
-    width: 240px;
-    height: 21px;
-    font-size: 22px;
+    left: 112px;
+    top: 32px;
+    width: 120px;
+    height: 11px;
+    font-size: 11px;
     font-family: PingFang SC;
     font-weight: 400;
     color: rgba(177, 177, 182, 1);
@@ -616,9 +601,9 @@ body {
   .tc {
     position: fixed;
     left: 0;
-    top: 173px;
-    width: 750px;
-    height: 1314px;
+    top: 86px;
+    width: 376px;
+    height: 657px;
     background: rgba(0, 0, 0, .5);
     z-index: 999999999;
   }
@@ -630,31 +615,31 @@ body {
   }
   .tc_cen .at-article__h4 {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 15px;
   }
 
   .tc_cen .img {
     width: 100%;
   }
 
-  .tc_cen .tc_Text {
-    width: 351px;
-    height: 54px;
-    font-size: 25px;
+  .tc_cen .tc_text {
+    width: 175px;
+    height: 27px;
+    font-size: 12px;
     margin: 0 auto;
   }
 
   .tc_cen .at-modal__content {
-    height: 540px;
+    height: 270px;
   }
 
   .tc_cen .AtButton {
-    width: 115px;
+    width: 57px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   .tc_cen .AtButton button {
-    border-radius: 18px;
+    border-radius: 9px;
   }
 
 

@@ -1,57 +1,36 @@
-import { ComponentType } from 'react'
-import Taro, { Component, Config } from '@tarojs/taro'
-import { View } from '@tarojs/components'
-import { observer, inject } from '@tarojs/mobx'
-import TabC from '../../tabC/tabC'
-import './index.scss'
+import React, { useState } from 'react';
+import {
+  useIonViewDidEnter,
+  useIonViewDidLeave,
+  useIonViewWillEnter,
+  useIonViewWillLeave
+} from '@ionic/react';
+// import { observer, inject } from 'mobx-react';
+import Tab3 from '../../tab3/index'
 
-type PageStateProps = {
-  counterStore: {
-    counter: number
-  }
-}
 
-interface Index {
-  props: PageStateProps;
-}
 
-@inject('counterStore')
-@observer
-class Index extends Component {
+const Index: React.FC = (props: any) => {
+  const [photoToDelete, setPhotoToDelete] = useState();
 
-  /**
-   * 指定config的类型声明为: Taro.Config
-   *
-   * 由于 typescript 对于 object 类型推导只能推出 Key 的基本类型
-   * 对于像 navigationBarTextStyle: 'black' 这样的推导出的类型是 string
-   * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
-   */
-  config: Config = {
-    navigationBarTitleText: '攻略'
-  }
+  useIonViewDidEnter(() => {
+    console.log('ionViewDidEnter tab2');
+  });
 
-  componentWillMount() { }
+  useIonViewDidLeave(() => {
+    console.log('ionViewDidLeave tab2');
+  });
 
-  componentWillReact() {
-    console.log('componentWillReact')
-  }
+  useIonViewWillEnter(() => {
+    console.log('ionViewWillEnter tab2');
+  });
 
-  componentDidMount() { }
+  useIonViewWillLeave(() => {
+    console.log('ionViewWillLeave tab2');
+  });
+  return (
+      <Tab3/>
+  );
+};
 
-  componentWillUnmount() { }
-
-  componentDidShow() { }
-
-  componentDidHide() { }
-
-  render() {
-    return (
-      <View className='tabC'>
-        {/*这里最好不要写页面；以组件形式引入*/}
-        <TabC/>
-      </View>
-    )
-  }
-}
-
-export default Index as ComponentType
+export default Index;

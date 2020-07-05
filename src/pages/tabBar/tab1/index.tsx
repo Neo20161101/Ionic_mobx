@@ -30,16 +30,7 @@ const Index: React.FC = observer((props: any) => {
     console.log('ionViewWillLeave event fired');
   });
   return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>首页</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent>
-        <Home/>
-      </IonContent>
-    </IonPage>
+      <Home/>
   );
 });
 

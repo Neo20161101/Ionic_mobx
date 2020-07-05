@@ -40,11 +40,9 @@ const Index: React.FC<Props> = (props) => {
       <IonSlides className='u-wrp-bnr top1 swiper-box' pager={true} options={{initialSlide: 1,speed: 400}}>
         {
           TopBanner.map(item =>
-            <div key={item.id}>
-              <IonSlide>
+              <IonSlide key={item.id}>
                 <img src={item.url} className='u-img-slide'></img>
               </IonSlide>
-            </div>
           )
         }
       </IonSlides >
@@ -65,26 +63,9 @@ const Index: React.FC<Props> = (props) => {
         </div>
         <div className="image4" onClick={onAttentionClick}>关注</div>
       </div >
-      <div className="top4">
-        <div className="top4_le">
-          <span>HomeInfoList.home_guideList[0].title</span>
-          <img src={Star}></img>
-          {/* <img src={HomeInfoList.home_guideList[0].icon}></img> */}
-        </div>
-        <div className="top4_ce">
-          <span>HomeInfoList.home_guideList[0].title</span>
-          <img src={Rule}></img>
-          {/* <img src={HomeInfoList.home_guideList[1].icon}></img> */}
-        </div>
-        <div className="top4_ri">
-          <span>HomeInfoList.home_guideList[0].title</span>
-          <img src={Guidance_book}></img>
-          {/* <img src={HomeInfoList.home_guideList[3].icon}></img> */}
-        </div>
-      </div>
       <div className="top5">
         {
-          !UpperList.length && <Notfound_404 />
+          !UpperList.length && <Notfound_404 pages={true} />
         }
       </div>
     </div >

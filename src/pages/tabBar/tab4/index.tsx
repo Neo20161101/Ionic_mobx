@@ -7,40 +7,30 @@ import {
 	useIonViewWillLeave
 } from '@ionic/react';
 import { observer, inject } from 'mobx-react';
-
+import Tab4 from '../../tab4/index'
 
 
 const Index: React.FC = observer((props: any) => {
 	const [photoToDelete, setPhotoToDelete] = useState();
 
 	useIonViewDidEnter(() => {
-		console.log('ionViewDidEnter event fired');
+		console.log('ionViewDidEnter tab4');
 	});
 
 	useIonViewDidLeave(() => {
-		console.log('ionViewDidLeave event fired');
+		console.log('ionViewDidLeave tab4');
 	});
 
 	useIonViewWillEnter(() => {
-		console.log('ionViewWillEnter event fired');
+		console.log('ionViewWillEnter tab4');
 	});
 
 	useIonViewWillLeave(() => {
-		console.log('ionViewWillLeave event fired');
+		console.log('ionViewWillLeave tab4');
 	});
 	return (
-		<IonPage>
-			<IonHeader>
-				<IonToolbar>
-					<IonTitle>Tab4</IonTitle>
-				</IonToolbar>
-			</IonHeader>
-			<IonContent>
-				{/*引入组件；例如：*/}
-				{/*<Tab4/>*/}
-			</IonContent>
-		</IonPage>
+		<Tab4/>
 	);
 });
 
-export default inject('config')(Index);
+export default Index;

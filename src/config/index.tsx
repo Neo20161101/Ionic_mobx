@@ -4,22 +4,16 @@ import { square, triangle, images, americanFootball } from 'ionicons/icons';
 import HomeImg from '../assets/static/img/tabBar/home.png'
 const store = observable({
   pages: [
-    "pages/index/index",
-    "pages/tabBar/tabB/index",
-    "pages/tabBar/tabC/index",
-    "pages/tabBar/tabD/index",
-    "pages/tabBar/myCenter/index",
-    "pages/user/homepage/index",
-    "pages/user/myOrder/index",
-    "pages/user/myOrder/orderDetail/index",
-    "pages/user/address/index",
-    "pages/user/address/addressDetail/index",
-    "pages/user/refund/index"
+    "pages/tabBar/tab1/index",
+    "pages/tabBar/tab2/index",
+    "pages/tabBar/tab3/index",
+    "pages/tabBar/tab4/index",
+    "pages/tabBar/tab5/index"
   ],
   tabBar: {
     list: [
       {
-        pagePath: "/tab1",
+        pagePath: "/pages/tabBar/tab1/index",
         iconPath: triangle,
         selectedIconPath: "static/img/tabBar/home-on.png",
         Label: "Tab One"
