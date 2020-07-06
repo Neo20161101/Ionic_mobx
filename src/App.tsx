@@ -2,13 +2,7 @@ import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
-  IonPage,
-  IonIcon,
-  IonLabel,
-  IonRouterOutlet,
-  IonTabBar,
-  IonTabButton,
-  IonTabs
+  IonRouterOutlet
 } from '@ionic/react';
 import { Provider } from 'mobx-react';
 import { IonReactRouter } from '@ionic/react-router';

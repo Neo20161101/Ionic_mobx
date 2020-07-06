@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
 import {
     IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton,
     useIonViewDidEnter,
@@ -12,11 +13,14 @@ import {camera} from "ionicons/icons";
 
 
 const Index: React.FC = observer((props: any) => {
-    const [photoToDelete, setPhotoToDelete] = useState();
-    const hich = () => {
-        props.history.replace({
-            pathname: '/tab2'
-        })
+    const [isLogin, setIsLogin] = useState(false);
+    const hich = (e:any) => {
+        // e.target.href = '/'
+        window.location.href= '/'
+        // props.history.replace({
+        //     pathname: '/'
+        // })
+        console.log(props)
     }
     useIonViewDidEnter(() => {
         console.log('ionViewDidEnter login');
@@ -35,9 +39,9 @@ const Index: React.FC = observer((props: any) => {
     });
     return (
         <IonPage>
-            <IonHeader collapse="condense">
+            <IonHeader>
                 <IonToolbar>
-                    <IonTitle size="large">登陆页面</IonTitle>
+                    <IonTitle>登陆页面</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent>

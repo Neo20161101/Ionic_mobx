@@ -38,7 +38,7 @@ After the user navigates to Tab 2 (Photos), they can tap/click on the camera but
 8) Run on the sync: `ionic cap sync`
 9) Run on the open: `ionic cap open android`
 
-## 每次执行ionic build更新Web目录的构建（例如）（默认值：）时build，您需要将这些更改复制到本地项目中：`ionic cap copy`
+## 每次执行ionic build更新Web目录的构建（例如）（默认值：）时build，您需要将这些更改复制到本地项目中：`ionic cap copy`  `ionic cap sync`
 ## 注意：对代码的本机部分进行更新（例如添加新插件）后，请使用以下sync命令：`ionic cap sync`
 ## 实时重载
 ## 要启动实时重载服务器，请运行以下命令。

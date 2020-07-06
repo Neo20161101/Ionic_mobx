@@ -1,7 +1,6 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import {
-    IonApp,
     IonPage,
     IonIcon,
     IonLabel,
@@ -32,7 +31,7 @@ Config.pages.map(item=>{
     } else {
         toogle = false
     }
-    routes.push({path: "/"+item,component: require('../'+item).default})
+    routes.push({path: (toogle?("/"+item+'/:id'):(("/"+item))),component: require('../'+item).default})
 })
 const RouteWithSubRoutes = (route:any) => {
     return route.map((item: { routes: any; path: any; component: any; })=>
@@ -59,7 +58,14 @@ const RouteWithSubRoutes = (route:any) => {
 // }
 const Index: React.FC = (props: any) => {
     useIonViewDidEnter(() => {
-        // console.log('首页，',props)
+        console.log('首页，',props)
+        if (props.location.pathname !== '/'){
+            props.history.replace({
+                pathname: '/login'
+            })
+        }
+
+        // window.location.href= '/login'
         // if (props.location.pathname === '/login'){
         //     props.history.replace({
         //         pathname: '/'
@@ -73,7 +79,8 @@ const Index: React.FC = (props: any) => {
                 <IonTabs>
                     <IonRouterOutlet>
                         {RouteWithSubRoutes(routes)}
-                        <Route path="/" render={() => <Redirect to="/pages/tabBar/tab1/index" />} exact={true} />
+                        <Route path="/" render={() => <Redirect to={routes[0].path||'/Notfound'} />} exact={true} />
+                        {/*<Route path="/login" render={() => <Redirect to={routes[0].path||'/Notfound'} />} exact={true} />*/}
                         <Route component={Notfound} />
                     </IonRouterOutlet>
                     <IonTabBar slot="bottom">
