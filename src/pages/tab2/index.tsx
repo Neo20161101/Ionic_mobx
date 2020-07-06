@@ -16,11 +16,6 @@ import { usePhotoGallery, Photo } from '../../hooks/usePhotoGallery';
 const Index: React.FC = observer((props: any) => {
     const { deletePhoto, photos, takePhoto } = usePhotoGallery();
     const [photoToDelete, setPhotoToDelete] = useState<Photo>();
-    const hich = () => {
-        props.history.push({
-            pathname: '/tab2/details'
-        })
-    }
     useIonViewDidEnter(() => {
         console.log('ionViewDidEnter tab2');
     });
@@ -49,7 +44,6 @@ const Index: React.FC = observer((props: any) => {
                         <IonTitle size="large">Photo Gallery1</IonTitle>
                     </IonToolbar>
                 </IonHeader>
-                <IonButton onClick={hich}>二级页面</IonButton>
                 <IonGrid>
                     <IonRow>
                         {photos.map((photo, index) => (

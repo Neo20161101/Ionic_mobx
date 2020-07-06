@@ -1,6 +1,5 @@
 import { observable } from 'mobx'
-import { observer, useLocalStore } from 'mobx-react'
-import { square, triangle, images, americanFootball } from 'ionicons/icons';
+import { square, triangle, images, americanFootball,person } from 'ionicons/icons';
 import HomeImg from '../assets/static/img/tabBar/home.png'
 const store = observable({
   pages: [
@@ -8,7 +7,8 @@ const store = observable({
     "pages/tabBar/tab2/index",
     "pages/tabBar/tab3/index",
     "pages/tabBar/tab4/index",
-    "pages/tabBar/tab5/index"
+    "pages/tabBar/tab5/index",
+    "pages/tab2/details/index/:id"
   ],
   tabBar: {
     list: [
@@ -19,26 +19,26 @@ const store = observable({
         Label: "Tab One"
       },
       {
-        pagePath: "/tab2",
+        pagePath: "/pages/tabBar/tab2/index",
         iconPath: images,
         selectedIconPath: "static/img/tabBar/home-on.png",
         Label: "Photos"
       },
       {
-        pagePath: "/tab3",
+        pagePath: "/pages/tabBar/tab3/index",
         iconPath: square,
         selectedIconPath: "static/img/tabBar/home-on.png",
         Label: "Tab Three"
       },
       {
-        pagePath: "/tab4",
+        pagePath: "/pages/tabBar/tab4/index",
         iconPath: americanFootball,
         selectedIconPath: "static/img/tabBar/home-on.png",
         Label: "Tab Four"
       },
       {
-        pagePath: "/tab5",
-        iconPath: HomeImg,
+        pagePath: "/pages/tabBar/tab5/index",
+        iconPath: person,
         selectedIconPath: "static/img/tabBar/home-on.png",
         Label: "Tab Five"
       }

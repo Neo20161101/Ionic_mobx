@@ -1,0 +1,374 @@
+	page {
+		position: relative;
+		background-color: #FFFFFF;
+	}
+	.user{}
+
+	.user .box {
+		background: rgba(248, 248, 248, 1);
+	}
+
+	.user .top {
+		width: 375px;
+		height: 219px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.user .beijin {
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+		left: 0;
+	}
+
+	.user .tx {
+		float: left;
+		width: 55px;
+		height: 55px;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		border-radius: 50%;
+		margin-left: 18px;
+		border: 2px solid rgba(215, 185, 117, 1);
+	}
+
+	.user .img1 {
+		width: 110px;
+		height: 110px;
+	}
+
+	.user .img2 {
+		position: absolute;
+		width: 25px;
+		height: 29px;
+		left: 36px;
+		top: 37px;
+	}
+
+	.user .text1 {
+		height: 27px;
+		font-size: 20px;
+		font-family: PingFang SC;
+		font-weight: bold;
+		color: rgba(51, 51, 51, 1);
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		word-break: break-all;
+	}
+
+	.user .img3 {
+		/*width: 65px;*/
+		margin-left: 10px;
+		padding: 2px 8px;
+		font-size: 11px;
+		color: #A48453;
+		border: 1px solid #A48453;
+	}
+
+	.user .img4 {
+		width: 107px;
+		height: 37px;
+		margin-left: 40px;
+		margin-top: 6px;
+	}
+
+	.user .text2,
+	.user .text3 {
+		height: 19px;
+		font-size: 12px;
+		font-family: PingFang SC;
+		color: rgba(51, 51, 51, 1);
+		margin-top: -5px;
+	}
+
+	.user .text4 {
+		width: 375px;
+		margin-top: -5px;
+	}
+	.user .text4 span {
+		height: 19px;
+		margin-top: 1px;
+		font-size: 12px;
+		font-family: PingFang SC;
+		color: rgba(102, 102, 102, 1);
+	}
+	.user .text4 img {
+		width: 21px;
+		height: 21px;
+		margin-left: 9px;
+	}
+
+	.user .text5 {
+		height: 23px;
+		font-size: 12px;
+		font-family: PingFang SC;
+		color: rgba(102, 102, 102, 1);
+	}
+
+	.user .cen1 {
+		width: 348px;
+		height: 99px;
+		background: rgba(255, 255, 255, 1);
+		box-shadow: 0px 5px 5px 0px rgba(208, 208, 208, 1);
+		border-radius: 7px;
+		margin: 0 auto;
+		transform: translateY(-63px);
+	}
+
+	.user .cen1_top {
+		width: 348px;
+		height: 31px;
+		position: relative;
+	}
+
+	.user .cen1_top div {
+		position: absolute;
+		width: 328px;
+		height: 1px;
+		background: rgba(238, 238, 238, 1);
+		left: 9px;
+		top: 31px;
+	}
+
+	.user .cen1_txt1 {
+		height: 27px;
+		font-size: 13px;
+		font-family: PingFang SC;
+		font-weight: bold;
+		color: rgba(51, 51, 51, 1);
+		margin-top: 10px;
+		margin-left: 8px;
+		line-height: 29px;
+	}
+
+	.user .cen1_txt2 {
+		height: 21px;
+		font-size: 11px;
+		font-family: PingFang SC;
+		font-weight: 400;
+		color: rgba(102, 102, 102, 1);
+		margin-left: 201px;
+		margin-top: 4px;
+	}
+
+	.user .cen1_con {
+		height: 68px;
+		width: 348px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.user .cen1_con img {
+		display: block;
+		height: 20px;
+		margin: 0 auto;
+		margin-top: 11px;
+	}
+
+	.user .cen1_con_text {
+		height: 22px;
+		font-size: 12px;
+		font-family: PingFang SC;
+		font-weight: 400;
+		color: rgba(51, 51, 51, 1);
+		text-align: center;
+	}
+
+	.user .cen1_con>div {
+		position: relative;
+		width: 60px;
+	}
+
+	.user .cen1_con span {
+		position: absolute;
+		width: 17px;
+		height: 17px;
+		background: rgba(240, 157, 62, 1);
+		border: 2px solid rgba(255, 255, 255, 1);
+		border-radius: 50%;
+		left: 33px;
+		top: 3px;
+		text-align: center;
+		line-height: 13px;
+		font-size: 12px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	.user .cen2 {
+		width: 348px;
+		height: 95px;
+		margin: 0 auto;
+		margin-top: 9px;
+		transform: translateY(-63px);
+	}
+
+	.user .cen2 img {
+		width: 348px;
+		height: 95px;
+	}
+
+	.user .cen3 {
+		width: 348px;
+		margin: 0 auto;
+		height: 95px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 8px;
+		transform: translateY(-63px);
+	}
+
+	.user .cen3 div {
+		width: 171px;
+		height: 95px;
+		border-radius: 7px;
+		position: relative;
+	}
+
+	.user .cen3_img1 {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.user .cen3_img2 {
+		position: absolute;
+		width: 22px;
+		height: 23px;
+		left: 75px;
+		top: 26px;
+	}
+
+	.user .cen3_txt {
+		width: auto;
+		height: 24px;
+		font-size: 13px;
+		font-family: PingFang SC;
+		font-weight: 400;
+		color: rgba(255, 255, 255, 1);
+		position: absolute;
+		left: 57px;
+		top: 56px;
+	}
+
+	.user .cen4 {
+		width: 348px;
+		background: rgba(255, 255, 255, 1);
+		box-shadow: 0 5px 5px 0px rgba(208, 208, 208, 1);
+		border-radius: 4px;
+		margin: 0 auto;
+		margin-top: 9px;
+		overflow: hidden;
+		transform: translateY(-63px);
+	}
+
+	.user .cen4_top {
+		height: 31px;
+		width: 348px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.user .cen4_txt1 {
+		height: 27px;
+		font-size: 13px;
+		font-family: PingFang SC;
+		font-weight: bold;
+		color: rgba(51, 51, 51, 1);
+		margin-top: 8px;
+		margin-left: 8px;
+		display: block;
+	}
+
+	.user .cen4_top div {
+		position: absolute;
+		width: 328px;
+		height: 1px;
+		background: rgba(238, 238, 238, 1);
+		left: 9px;
+		top: 30px;
+	}
+
+	.user .cen4_con {
+		width: 348px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+    	padding-bottom: 10px;
+  }
+
+	.user .cen4_con1 {
+		width: 75px;
+		margin-top: 9px;
+		position: relative;
+	}
+
+	.user .cen4_con1 img {
+		width: 29px;
+		height: 29px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.user .cen4_con1 div {
+		font-size: 12px;
+		font-family: PingFang SC;
+		color: rgba(51, 51, 51, 1);
+		width: 75px;
+		text-align: center;
+		margin-top: 9px;
+	}
+
+	.user .cen5 {
+		width: 348px;
+		background: rgba(255, 255, 255, 1);
+		box-shadow: 0px 5px 5px 0px rgba(208, 208, 208, 1);
+		border-radius: 4px;
+		margin: 0 auto;
+		margin-top: 9px;
+		transform: translateY(-63px);
+	}
+
+	.user .cen5_con {
+		width: 348px;
+		display: flex;
+		justify-content: space-around;
+		text-align:center;
+		color:#b1b1b6;
+		padding:10px 0;
+	}
+
+	.user .cen4_con1 span {
+		width: 16px;
+		height: 16px;
+		background: rgba(233, 51, 64, 1);
+		border-radius: 50%;
+		position: absolute;
+		left: 46px;
+		top: -1px;
+	}
+
+	.user .cen6 {
+
+	}
+
+	.user .cen6 img {
+		width: 38px;
+		height: 46px;
+		margin-left: 164px;
+		margin-top: 7px;
+	}
+
+	.user .cen6 div {
+		height: 19px;
+		font-size: 10px;
+		font-family: PingFang SC;
+		color: rgba(210, 210, 210, 1);
+		text-align: center;
+	}

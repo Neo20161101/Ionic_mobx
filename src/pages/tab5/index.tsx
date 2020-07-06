@@ -1,6 +1,6 @@
 import React ,{ useState } from 'react';
 import {
-    IonContent, IonHeader, IonPage, IonTitle, IonToolbar
+    IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonGrid, IonRow, IonCol
 } from '@ionic/react';
 // import { observer, inject } from '@tarojs/mobx';
 import ErroImg from '../../assets/static/img/user/待付款.png';
@@ -10,7 +10,7 @@ import Icon_store from '../../assets/static/img/user/商城.png';
 import Icon_await_consignment from '../../assets/static/img/user/待发货.png';
 import Icon_await_take from '../../assets/static/img/user/待收货.png';
 import Icon_evaluate from '../../assets/static/img/user/评价.png';
-
+import './index.css'
 // interface Index {
 //     props: PageStateProps;
 // }
@@ -45,21 +45,21 @@ const Index: React.FC = (props: any) => {
         <IonPage>
             <IonHeader>
                 <IonToolbar>
-                    <IonTitle>Tab5</IonTitle>
+                    <IonTitle>我的中心</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent>
                 <div className='user'>
-                    <div className="top">
+                    <IonGrid className="top">
                         <img className="beijin" src="https://zhyaliu-1259405676.cos.ap-chengdu.myqcloud.com/xinghu/%E8%83%8C%E6%99%AF%E6%8B%B7%E8%B4%9D.png"></img>
-                        <div className='at-row' style={{marginTop:'70px'}}>
-                            <div className='at-col at-col-3'>
+                        <IonRow className='at-row' style={{position:'absolute',top: '60px' }}>
+                            <IonCol size="3" className='at-col at-col-3'>
                                 <div className="tx">
                                     {/*<img className="img1" src={stateStore.userInfo.avatarUrl}></img>*/}
                                 </div>
-                            </div>
-                            <div className='at-col at-col-9'>
-                                <div className="text1">"请登录"</div>
+                            </IonCol>
+                            <IonCol size="9" className='at-col at-col-9'>
+                                <span className="text1">"请登录"</span>
                                 {
                                     !toggleLogin?
                                         <button className="img3" >
@@ -77,9 +77,9 @@ const Index: React.FC = (props: any) => {
                                 <div className="text5">
                                     <span className="txt">注册时间:1324325</span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </IonCol>
+                        </IonRow>
+                    </IonGrid>
                     <div className="box">
                         <div className="cen1">
                             <div className="cen1_top">
@@ -90,14 +90,14 @@ const Index: React.FC = (props: any) => {
                             <div className="cen1_con">
                                 {
                                     array.map((item: { id: string | number | undefined; img: any; span: any }) => <div key={item.id}>
-                                        <img src={item.img} style={{width:'44px'}}></img>
+                                        <img src={item.img} style={{width:'22px'}}></img>
                                         <div className="cen1_con_text">{item.span}</div>
                                         <span>1</span>
                                     </div>)
                                 }
 
                                 <div>
-                                    <img src={Icon_after_sale} style={{width:'44px'}}></img>
+                                    <img src={Icon_after_sale} style={{width:'22px'}}></img>
                                     <div className="cen1_con_text">退款/售后</div>
                                     <span>1</span>
                                 </div>

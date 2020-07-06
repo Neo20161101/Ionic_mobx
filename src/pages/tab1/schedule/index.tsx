@@ -12,7 +12,6 @@ export interface Props {
 }
 
 const Index: React.FC<Props> = (props) => {
-  console.log("props,",props)
   const [TopBanner, setTopBanner] = useState([
     {
       id: 0,

@@ -29,7 +29,7 @@ const Index: React.FC = (props: any) => {
     console.log('ionViewWillLeave tab2');
   });
   return (
-      <Tab3/>
+      <Tab3 {...props} />
   );
 };
 

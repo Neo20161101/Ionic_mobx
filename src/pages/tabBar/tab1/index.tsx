@@ -8,6 +8,7 @@ import {
 } from '@ionic/react';
 import { observer, inject } from 'mobx-react';
 import Home from '../../tab1/index'
+import Tab2 from "../../tab2";
 
 
 
@@ -30,7 +31,7 @@ const Index: React.FC = observer((props: any) => {
     console.log('ionViewWillLeave event fired');
   });
   return (
-      <Home/>
+      <Home {...props} />
   );
 });
 
