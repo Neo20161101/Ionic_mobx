@@ -20,7 +20,6 @@ const Index: React.FC = observer((props: any) => {
         // props.history.replace({
         //     pathname: '/'
         // })
-        console.log(props)
     }
     useIonViewDidEnter(() => {
         console.log('ionViewDidEnter login');
