@@ -1,6 +1,6 @@
 import { observable } from 'mobx'
 import { square, triangle, images, americanFootball,person } from 'ionicons/icons';
-import HomeImg from '../assets/static/img/tabBar/home.png'
+// import HomeImg from '../assets/static/img/tabBar/home.png'
 const store = observable({
   pages: [
     "pages/tabBar/tab1/index",

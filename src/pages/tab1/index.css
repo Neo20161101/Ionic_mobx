@@ -157,6 +157,7 @@ ion-slides {
     background-color: #fff;
     position: relative;
     border-radius: 8px;
+    font-size: 0.32rem;
   }
 .home .top2 .AtNoticebar {
     width: 90%;
@@ -179,18 +180,18 @@ ion-slides {
     color: #D7B975;
   }
 
-.home .top2 .AtNoticebar .look {
-    width: 64px;
-    height: 29px;
+.home .top2 .look {
+    width: 32px;
+    height: 14px;
     border: 1px solid #D7B975;
-    border-radius: 8px;
+    border-radius: 4px;
     color: #D7B975;
     font-weight: 700;
     text-align: center;
-    font-size: 18px;
+    font-size: 9px;
     position: absolute;
-    right: 8px;
-    top: 14px;
+    right: 5px;
+    top: 4px;
   }
 
 .home .image1 {
@@ -259,7 +260,6 @@ ion-slides {
   }
 
 .home .top3 .image4 {
-    float: right;
     width: 32px;
     height: 15px;
     border: 1px solid #66DC79;
@@ -269,9 +269,10 @@ ion-slides {
     text-align: center;
     margin-top: 12px;
     margin-right: 5px;
-    line-height: .8;
-    padding: 1px 0px;
+    line-height: 1.2;
+    padding: 1px 0;
     border-radius: 4px;
+    float: right;
 
   }
 .home .top4 {

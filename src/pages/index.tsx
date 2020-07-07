@@ -25,7 +25,7 @@ import Notfound from '../components/Notfound/_404';
 const routes: { path: string; component: any; }[] = [];
 Config.pages.map(item=>{
     let toogle = false
-    if (item.lastIndexOf('/:id')!=-1){
+    if (item.lastIndexOf('/:id')!==-1){
         item = item.substring(0, item.lastIndexOf('/:id'));
         toogle = true
     } else {
@@ -59,19 +59,13 @@ const RouteWithSubRoutes = (route:any) => {
 const Index: React.FC = (props: any) => {
     useIonViewDidEnter(() => {
         console.log('首页，',props)
-        if (props.location.pathname !== '/'){
-            props.history.replace({
-                pathname: '/login'
-            })
-        }
+        // if (props.location.pathname !== '/'){
+        //     props.history.replace({
+        //         pathname: '/login'
+        //     })
+        // }
 
         // window.location.href= '/login'
-        // if (props.location.pathname === '/login'){
-        //     props.history.replace({
-        //         pathname: '/'
-        //     })
-        //     console.log('首页',props);
-        // }
     });
     return(
         <IonPage>
