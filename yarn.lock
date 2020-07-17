@@ -2,13 +2,6 @@
 # yarn lockfile v1
 
 
-"@angular/core@^10.0.2":
-  version "10.0.2"
-  resolved "https://registry.npm.taobao.org/@angular/core/download/@angular/core-10.0.2.tgz#d2d2c2dd4a9e80dcccc63c274f13ab7397ee5a3b"
-  integrity sha1-0tLC3UqegNzMxjwnTxOrc5fuWjs=
-  dependencies:
-    tslib "^2.0.0"
-
 "@babel/code-frame@7.8.3":
   version "7.8.3"
   resolved "https://registry.npm.taobao.org/@babel/code-frame/download/@babel/code-frame-7.8.3.tgz?cache=0&sync_timestamp=1593522826253&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fcode-frame%2Fdownload%2F%40babel%2Fcode-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
@@ -1204,13 +1197,6 @@
   version "5.27.0"
   resolved "https://registry.npm.taobao.org/@ionic-native/barcode-scanner/download/@ionic-native/barcode-scanner-5.27.0.tgz#85f1c97d469b6eb2560628fb390babe33288b529"
   integrity sha1-hfHJfUabbrJWBij7OQur4zKItSk=
-  dependencies:
-    "@types/cordova" latest
-
-"@ionic-native/camera@^5.27.0":
-  version "5.27.0"
-  resolved "https://registry.npm.taobao.org/@ionic-native/camera/download/@ionic-native/camera-5.27.0.tgz#0c3d610794b52b26554179ddf142788997b15644"
-  integrity sha1-DD1hB5S1KyZVQXnd8UJ4iZexVkQ=
   dependencies:
     "@types/cordova" latest
 
@@ -3351,11 +3337,6 @@ cordova-plugin-badge@^0.8.8:
   version "0.8.8"
   resolved "https://registry.npm.taobao.org/cordova-plugin-badge/download/cordova-plugin-badge-0.8.8.tgz#0924018699b48f92dd3b33615452737582144c96"
   integrity sha1-CSQBhpm0j5LdOzNhVFJzdYIUTJY=
-
-cordova-plugin-camera@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.npm.taobao.org/cordova-plugin-camera/download/cordova-plugin-camera-4.1.0.tgz#6474a3e080c4662aa00fd7425705d301c693ddc0"
-  integrity sha1-ZHSj4IDEZiqgD9dCVwXTAcaT3cA=
 
 cordova-plugin-device@^2.0.3:
   version "2.0.3"
@@ -10593,7 +10574,7 @@ ts-pnp@^1.1.6:
   resolved "https://registry.npm.taobao.org/ts-pnp/download/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha1-pQCtCEsHmPHDBxrzkeZZEshrypI=
 
-tslib@*, tslib@^2.0.0:
+tslib@*:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/tslib/download/tslib-2.0.0.tgz#18d13fc2dce04051e20f074cc8387fd8089ce4f3"
   integrity sha1-GNE/wtzgQFHiDwdMyDh/2Aic5PM=
