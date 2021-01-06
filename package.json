@@ -22,7 +22,7 @@
     "@types/react-dom": "^16.9.6",
     "@types/react-router": "^5.1.5",
     "@types/react-router-dom": "^5.1.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "cordova-plugin-appcenter-shared": "^0.5.1",
     "cordova-plugin-badge": "^0.8.8",
     "cordova-plugin-device": "^2.0.3",
